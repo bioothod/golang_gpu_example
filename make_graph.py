@@ -10,6 +10,7 @@ def main(args=None):
         ph0 = tf.placeholder(tf.int32, [None, 3], name='input/ph0')
         ph1 = tf.placeholder(tf.int32, [None, 3], name='input/ph1')
 
+        #op = tf.reduce_sum(ph0 * ph1, axis=1, name='output/op')
         op = tf.matmul(ph0, ph1, transpose_a=True, name='output/op')
 
         with tf.Session(graph=g) as sess:

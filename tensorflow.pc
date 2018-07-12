@@ -1,0 +1,11 @@
+prefix=/usr/local/
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib64
+includedir=/home/zbr/awork/ml/tensorflow/tensorflow
+
+Name: TensorFlow
+Version: 1.0.0
+Description: Library for computation using data flow graphs for scalable machine learning
+Requires:
+Libs: -L${libdir} -ltensorflow
+Cflags: -I${includedir}

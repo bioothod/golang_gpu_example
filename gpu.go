@@ -88,6 +88,5 @@ func main() {
 		log.Fatalf("could not run face detection inference: %v", err)
 	}
 
-	output := res[0].Value().([][]int32)
-	fmt.Printf("op: %v\n", output)
+	fmt.Printf("op: %v\n", res[0].Value())
 }
